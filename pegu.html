@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pegu.css">
+    <title>Pegu Academy</title>
+</head>
+
+<body>
+    <nav>
+        <div class="heading">Pegu Academy</div>
+        <span class="sideMenuButton" onclick="openNavbar()">
+            &#9776
+        </span>
+        <div class="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="sideNavigationBar" id="sideNavigationBar">
+        <a href="#" class="closeButton" onclick="closeNavbar()">
+            &#x274C
+        </a>
+        <a href="#Home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Sign Up</a>
+    </div>
+
+    <div class="line" id="Home">
+        <div class="side1">
+            <h1>Welcome to Pegu Academy</h1>
+            <button>
+                <a href="#about">Explore More</a>
+            </button>
+        </div>
+        <div class="side2">
+            <img src="https://img.freepik.com/free-vector/web-development-banner_33099-1687.jpg" width="500">
+        </div>
+    </div>
+
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title">
+                <span>Courses</span>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="topic">
+                        <a href="#" target="_blank">CSS</a>
+                    </div>
+                    <p>
+                        Learn how to style and visually enhance websites using Cascading Style Sheets. Master layouts, animations, and responsiveness.
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="topic">
+                        <a href="#" target="_blank">HTML</a>
+                    </div>
+                    <p>
+                        Build your first webpage using HTML – the structure and skeleton of every website on the internet.
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="topic">
+                        <a href="#" target="_blank">JavaScript</a>
+                    </div>
+                    <p>
+                        Learn JavaScript, the language that brings life and interactivity to websites. Perfect for frontend developers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="content">
+            <div class="title"><span>Sign Up</span></div>
+            <div class="contactMenu">
+                <div class="input1">
+                    <div class="label1">Your Name</div>
+                    <div class="input2">
+                        <input type="text" placeholder="Enter your Name here">
+                    </div>
+                    <div class="label1">
+                        <label>Your Email</label>
+                    </div>
+                    <div class="input2">
+                        <input type="text" placeholder="Enter your Email here">
+                    </div>
+                    <div class="label1">
+                        <label>Your Password</label>
+                    </div>
+                    <div class="input2">
+                        <input type="password" placeholder="Enter your Password here">
+                    </div>
+                    <div class="button">
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+                <div class="input3">
+                    <div class="rightside1">
+                        <div class="title1">
+                            <span>Contact Us</span>
+                        </div>
+                        <div class="content1">
+                            Gupison Pegu, Founder<br>
+                            Dhemaji, Assam - 787059<br>
+                            gupisonp@example.com
+                        </div>
+                        <div class="title1">
+                            <span>More Information</span>
+                        </div>
+                        <div class="content1">
+                            Pegu Academy is a personal initiative to help students master programming fundamentals, prepare for careers, and build confidence through clear learning paths. Thank you for supporting this independent platform.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <span>
+                Created by <a href="#" target="_blank">Gupison Pegu</a>
+            </span>
+        </div>
+    </footer>
+
+    <script>
+        function openNavbar() {
+            document.getElementById("sideNavigationBar").style.width = "50%";
+        }
+        function closeNavbar() {
+            document.getElementById("sideNavigationBar").style.width = "0%";
+        }
+    </script>
+</body>
+
+</html>
